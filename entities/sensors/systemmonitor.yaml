@@ -1,0 +1,17 @@
+---
+# Gather some System data
+#
+# https://www.home-assistant.io/integrations/systemmonitor/
+#
+
+
+platform: systemmonitor
+resources:
+  - type: last_boot
+  - type: processor_use
+  - type: memory_use_percent
+  - type: memory_free
+  - type: disk_use_percent
+    arg: /
+  - type: disk_free
+    arg: /
